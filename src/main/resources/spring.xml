@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
-        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd"
+        >
 
-<beans>
-    <bean>
 
-    </bean>
+    <context:component-scan base-package="demo"/>
+
+<!--    <bean id="engineer" class="demo.Engineer">-->
+<!--        <constructor-arg value="Jatin"></constructor-arg>-->
+<!--    </bean>-->
+<!--    <bean id="tester" class="demo.Tester"></bean>-->
+
+
+
 </beans>
